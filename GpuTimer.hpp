@@ -36,3 +36,10 @@ struct GpuTimer
             return elapsed;
       }
 };
+/*
+Example:
+GpuTimer Timer;
+GPU Kernel Function<<<>>>()
+cudaDeviceSynchronize();
+cout << Timer.Elapsed();
+*/
